@@ -82,12 +82,14 @@ merge 후 git push로 remoteRepository 또한 변경될 수 있게 해줘야 한
 ;
 
 
-# git branch 변경
-=> git switch -c 변경할 브랜치명
-=>ex) git switch -c master
-
 
 # 브랜치 변경 후 변경한 브랜치로 push 하는 명령어
 => git push --set-upstream origin master
+
+
+# master branch로 합치는것
+=> 현재의 브랜치 경로가 develop이라면 master브랜치로 이동 후
+git merge develop이라고 해야한다.
+그렇다면 develop의 소스코드가 master 브랜치로 병합이 된다.
 
 
